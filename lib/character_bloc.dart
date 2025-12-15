@@ -19,6 +19,7 @@ class CharacterBloc extends Bloc<CharacterEvent,CharacterState>{
         emit(CharacterLoaded(listMain));
 
       }catch(e){
+
         emit(CharacterError(e.toString()));
       }
     });
